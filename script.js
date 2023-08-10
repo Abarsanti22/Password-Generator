@@ -14,7 +14,7 @@ function generatePassword() {
 
 lowercaseArray [1]
 
- var passwordLength= prompt("Choose how many characters between 8 and 128");
+ var passwordLength= prompt("Choose how many characters you would like in your password (between 8 and 128)");
 if (passwordLength < 8){
   alert("Password must contain more than 7 characters!");
 return "";
@@ -51,14 +51,14 @@ return userArray.join("");
 }
   
   
-  function writePassword () {
+ function writePassword () {
  var password = generatePassword ();
-    var passwordText = document.querySelector("#password");
+ var passwordText = document.querySelector("#password");
   
     passwordText.value = password;
   
   }
   
   
-  // Add event listener to generate button
+
   generateBtn.addEventListener("click", writePassword);
